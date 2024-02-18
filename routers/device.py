@@ -10,6 +10,10 @@ from schemas import DeviceBase, DeviceInDB
 router = APIRouter()
 
 
+@router.get("/hello")
+async def hello():
+    return {"message": "Hello World"}
+
 @router.post("/create/", response_model=DeviceInDB)
 async def create_device(device: DeviceBase, db: Session = Depends(get_db)):
     try:

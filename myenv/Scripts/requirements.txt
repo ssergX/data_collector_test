@@ -19,5 +19,3 @@ typing_extensions==4.9.0
 urllib3==2.2.0
 uvicorn==0.27.1
 zope.interface==6.2
-SQLAlchemy~=2.0.27
-numpy~=1.26.4
