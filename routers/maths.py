@@ -9,6 +9,7 @@ from utils import calculate_median
 
 router = APIRouter()
 
+b = "test"
 
 @router.get("/devices/{device_id}/", response_model=dict)
 async def get_device_stats(device_id: int, db: Session = Depends(get_db)):
